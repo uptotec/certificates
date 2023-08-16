@@ -16,7 +16,10 @@ export default function Home() {
       setError('Enter 3 names');
       return;
     }
-    window.open(`/api/genCert?name=${name}`, '_blank');
+    window.open(
+      `https://certificate-backend-s54y.onrender.com/?name=${name}`,
+      '_blank'
+    );
   };
 
   return (
