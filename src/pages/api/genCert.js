@@ -1,7 +1,5 @@
 import { createCanvas, loadImage, registerFont } from 'canvas';
 import path from 'path';
-import getConfig from 'next/config';
-const { serverRuntimeConfig } = getConfig();
 
 export default async function handler(req, res) {
   if (req.method !== 'GET')
