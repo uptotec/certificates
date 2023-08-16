@@ -4,14 +4,6 @@ const nextConfig = {
   serverRuntimeConfig: {
     PROJECT_ROOT: __dirname,
   },
-  experimental: {
-    legacyBrowsers: false,
-    outputFileTracingExcludes: ['**canvas**'],
-  },
-  webpack: (config) => {
-    config.externals = [...config.externals, 'canvas', 'jsdom'];
-    return config;
-  },
 };
 
 module.exports = nextConfig;
