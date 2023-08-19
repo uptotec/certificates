@@ -17,7 +17,7 @@ export default function Home() {
       return;
     }
     window.open(
-      `https://certificate-backend-s54y.onrender.com/?name=${name}`,
+      `https://stingray-app-j2izt.ondigitalocean.app/?name=${name}`,
       '_blank'
     );
   };
