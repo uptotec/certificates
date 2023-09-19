@@ -16,10 +16,7 @@ export default function Home() {
       setError('Enter 3 names');
       return;
     }
-    window.open(
-      `https://stingray-app-j2izt.ondigitalocean.app/?name=${name}`,
-      '_blank'
-    );
+    window.open(`/api/genCert/?name=${name}`, '_blank');
   };
 
   return (
